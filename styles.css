@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(45deg, #000000 0%, #333333 100%);
     color: white;
     margin: 0;
     padding: 0;
@@ -9,12 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    animation: backgroundShift 10s ease-in-out infinite alternate;
-}
-
-@keyframes backgroundShift {
-    0% { background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); }
-    100% { background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); }
 }
 
 .container {
@@ -26,8 +20,9 @@ body {
 .title {
     font-size: 3rem;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    animation: titlePulse 2s ease-in-out infinite;
+    text-shadow: 2px 2px 4px rgba(255,0,0,0.5);
+    color: #ff0000;
+    animation: titlePulse 5s ease-in-out infinite;
 }
 
 @keyframes titlePulse {
@@ -43,11 +38,12 @@ body {
 }
 
 .time-box {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
     border-radius: 10px;
     padding: 1rem;
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.5);
     animation: boxFloat 3s ease-in-out infinite;
 }
 
@@ -64,8 +60,8 @@ body {
 }
 
 @keyframes numberGlow {
-    0% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
-    100% { text-shadow: 0 0 20px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,0.5); }
+    0% { text-shadow: 0 0 5px rgba(255,0,0,0.5); }
+    100% { text-shadow: 0 0 20px rgba(255,0,0,1), 0 0 30px rgba(255,0,0,0.5); }
 }
 
 .label {
@@ -85,21 +81,7 @@ body {
     100% { opacity: 1; }
 }
 
-.plane-animation {
-    font-size: 4rem;
-    animation: planeFly 5s linear infinite;
-    position: absolute;
-    top: 20%;
-    left: -10%;
-}
 
-@keyframes planeFly {
-    0% { transform: translateX(-100px) rotate(0deg); }
-    25% { transform: translateX(25vw) rotate(5deg); }
-    50% { transform: translateX(50vw) rotate(0deg); }
-    75% { transform: translateX(75vw) rotate(-5deg); }
-    100% { transform: translateX(100vw) rotate(0deg); }
-}
 
 @media (max-width: 768px) {
     .title {
