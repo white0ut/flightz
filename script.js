@@ -1,6 +1,6 @@
 // Set the target date for flight landing (YYYY-MM-DDTHH:MM:SS format)
 // Update this with your actual flight landing time
-const targetDate = new Date('2025-10-05T18:15:00').getTime();
+const targetDate = new Date('2025-10-05T18:15:00-07:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
