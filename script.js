@@ -1,6 +1,6 @@
 // Set the target date for flight landing (YYYY-MM-DDTHH:MM:SS format)
 // Update this with your actual flight landing time
-const targetDate = new Date('2025-10-05T22:18:00').getTime();
+const targetDate = new Date('2025-11-11T14:45:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -8,7 +8,7 @@ function updateCountdown() {
 
     if (distance < 0) {
         document.querySelector('.countdown').innerHTML = '<h2>You\'ve landed in Vancouver! 🎉</h2>';
-        document.querySelector('.message').textContent = 'Welcome to beautiful Vancouver! 🌲🍁';
+        document.querySelector('.message').textContent = 'Welcome to the Windy City! 🏙️🍕';
         return;
     }
 

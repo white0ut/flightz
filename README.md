@@ -1,6 +1,6 @@
-# Flight UA1580 Countdown to Vancouver
+# Flight AC 1048 Countdown to Chicago
 
-A fun, animated countdown website for flight UA1580 landing in Vancouver!
+A fun, animated countdown website for flight AC 1048 landing in Chicago!
 
 ## Setup
 
@@ -69,4 +69,4 @@ Alternatively, you can simply open `index.html` directly in your browser, but us
 - Responsive design
 - Fun plane animation
 
-Enjoy your flight to Vancouver! ✈️🌲
+Enjoy your flight to Chicago! ✈️🏙️
