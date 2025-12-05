@@ -1,6 +1,7 @@
 // Set the target date for flight landing (YYYY-MM-DDTHH:MM:SS format)
 // Update this with your actual flight landing time
-const targetDate = new Date('2025-11-11T14:45:00').getTime();
+// Set target date in UTC to ensure consistent countdown across timezones
+const targetDate = Date.UTC(2025, 11, 13, 0, 0, 0);
 
 function updateCountdown() {
     const now = new Date().getTime();
